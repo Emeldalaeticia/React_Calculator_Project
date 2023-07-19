@@ -21,6 +21,7 @@ function App() {
 
   return (
     <>
+    <div className='heading'> CALCULATOR </div>
       <div className='calculator'>
         <input type="text" value={result} disabled />
         <div className='buttons'>
@@ -51,7 +52,7 @@ function App() {
           <button id='00' className='number' onClick={handleClick}>00</button>
           <button id='0' className='number' onClick={handleClick}>0</button>
 
-          <button id='=' className='operator col-span-2' onClick={handleClick}>=</button>
+          <button id='=' className='operator col-span-2' onClick={calculate}>=</button>
         </div>
       </div>
       
